@@ -1,14 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
-export const BookEditScreen = () => {
+export const EditBookScreen = () => {
   return (
     <View style={styles.container}>
-      <Text>Edit Books</Text>
+      <Text>Edit Book</Text>
       <StatusBar style="auto" />
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -19,4 +19,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default BookEditScreen;
+export default EditBookScreen;

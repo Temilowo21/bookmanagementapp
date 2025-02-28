@@ -1,14 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 
-export const AddBookScreen = () => {
+export const AddBookScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Text>Add Books</Text>
+      <Text>Add a New Book</Text>
+      <Button title="Go Back" onPress={() => navigation.goBack()} />
       <StatusBar style="auto" />
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
